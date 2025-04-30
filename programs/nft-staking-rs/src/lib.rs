@@ -26,5 +26,9 @@ pub mod nft_staking_rs {
         ctx.accounts.initialize_user(&ctx.bumps)
     }
 
-    
+    pub fn stake(ctx: Context<Stake>) -> Result<()> {
+
+        ctx.accounts.stake(&ctx.bumps)
+    }
+ 
 }
